@@ -185,6 +185,16 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7990070876630970027, guid: e1a2fb5ee22f650479d684ff70608f57, type: 3}
   m_PrefabInstance: {fileID: 10359349}
   m_PrefabAsset: {fileID: 0}
+--- !u!108 &40686688 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 1020122342775729817, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+  m_PrefabInstance: {fileID: 1058165472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &43565282 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4976291486132824969, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+  m_PrefabInstance: {fileID: 1058165472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &49496144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -362,6 +372,7 @@ GameObject:
   - component: {fileID: 80643271}
   - component: {fileID: 80643273}
   - component: {fileID: 80643272}
+  - component: {fileID: 80643274}
   m_Layer: 0
   m_Name: Anchor_Light__FlickerLamp__03
   m_TagString: Untagged
@@ -465,6 +476,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &80643274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80643270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &109677663
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -872,6 +912,7 @@ GameObject:
   - component: {fileID: 192634263}
   - component: {fileID: 192634265}
   - component: {fileID: 192634264}
+  - component: {fileID: 192634266}
   m_Layer: 0
   m_Name: Anchor_Light__FurnaceEmber__20
   m_TagString: Untagged
@@ -975,6 +1016,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &192634266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192634262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &203217393
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,6 +1055,7 @@ GameObject:
   m_Component:
   - component: {fileID: 203217395}
   - component: {fileID: 203217394}
+  - component: {fileID: 203217396}
   m_Layer: 0
   m_Name: Moonlight_Directional
   m_TagString: Untagged
@@ -1072,6 +1143,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &203217396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203217393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &264019532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1368,6 +1468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 344773839}
   - component: {fileID: 344773840}
+  - component: {fileID: 344773841}
   m_Layer: 0
   m_Name: Anchor_Light__RedEmergency__16
   m_TagString: Untagged
@@ -1455,6 +1556,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &344773841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344773838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &349088913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1532,6 +1662,7 @@ GameObject:
   - component: {fileID: 352957509}
   - component: {fileID: 352957511}
   - component: {fileID: 352957510}
+  - component: {fileID: 352957512}
   m_Layer: 0
   m_Name: Anchor_Light__FurnaceEmber__14
   m_TagString: Untagged
@@ -1635,6 +1766,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &352957512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 352957508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &365801586
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1777,6 +1937,7 @@ GameObject:
   m_Component:
   - component: {fileID: 381130082}
   - component: {fileID: 381130083}
+  - component: {fileID: 381130084}
   m_Layer: 0
   m_Name: Anchor_Light__WarmSodium__00
   m_TagString: Untagged
@@ -1864,6 +2025,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &381130084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381130081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &392460064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2853,6 +3043,7 @@ GameObject:
   - component: {fileID: 602741648}
   - component: {fileID: 602741650}
   - component: {fileID: 602741649}
+  - component: {fileID: 602741651}
   m_Layer: 0
   m_Name: Anchor_Light__FlickerLamp__13
   m_TagString: Untagged
@@ -2956,6 +3147,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &602741651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602741647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &604105786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3220,6 +3440,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8284195585238027640, guid: cdd37dce2384ce44ba245cb8a8477859, type: 3}
   m_PrefabInstance: {fileID: 659246194}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &666492309 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5634289105339641246, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+  m_PrefabInstance: {fileID: 1058165472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &668674489
 GameObject:
   m_ObjectHideFlags: 0
@@ -3230,6 +3455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 668674490}
   - component: {fileID: 668674491}
+  - component: {fileID: 668674492}
   m_Layer: 0
   m_Name: Anchor_Light__AmberControl__11
   m_TagString: Untagged
@@ -3317,6 +3543,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &668674492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668674489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &694562923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3525,6 +3780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 766584074}
   - component: {fileID: 766584075}
+  - component: {fileID: 766584076}
   m_Layer: 0
   m_Name: Anchor_Light__ColdMoon__07
   m_TagString: Untagged
@@ -3612,6 +3868,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &766584076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766584073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!64 &770170279
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4271,6 +4556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 908992913}
   - component: {fileID: 908992914}
+  - component: {fileID: 908992915}
   m_Layer: 0
   m_Name: Anchor_Light__WarmSodium__17
   m_TagString: Untagged
@@ -4358,6 +4644,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &908992915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908992912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &910818733
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10043,6 +10358,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 791250247}
     m_Modifications:
+    - target: {fileID: 982087501030411485, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+      propertyPath: cameraPivot
+      value: 
+      objectReference: {fileID: 1996264168}
+    - target: {fileID: 982087501030411485, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+      propertyPath: suitFlashlight
+      value: 
+      objectReference: {fileID: 40686688}
+    - target: {fileID: 982087501030411485, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+      propertyPath: headMeshRenderer
+      value: 
+      objectReference: {fileID: 1684866486}
+    - target: {fileID: 982087501030411485, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+      propertyPath: characterAnimator
+      value: 
+      objectReference: {fileID: 43565282}
     - target: {fileID: 1268920754691918076, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -10083,10 +10414,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4193534839570000904, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+      propertyPath: aimOrigin
+      value: 
+      objectReference: {fileID: 666492309}
     - target: {fileID: 5293533831280765191, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
       propertyPath: m_Name
       value: Player_Hazmat
       objectReference: {fileID: 0}
+    - target: {fileID: 6535530642282883686, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+      propertyPath: eyes
+      value: 
+      objectReference: {fileID: 2119746342}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10108,6 +10447,7 @@ GameObject:
   - component: {fileID: 1063782644}
   - component: {fileID: 1063782646}
   - component: {fileID: 1063782645}
+  - component: {fileID: 1063782647}
   m_Layer: 0
   m_Name: Anchor_Light__FurnaceEmber__15
   m_TagString: Untagged
@@ -10211,6 +10551,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1063782647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063782643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &1070642145
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10287,6 +10656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1082466947}
   - component: {fileID: 1082466948}
+  - component: {fileID: 1082466949}
   m_Layer: 0
   m_Name: Anchor_Light__WarmSodium__10
   m_TagString: Untagged
@@ -10374,6 +10744,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1082466949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082466946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &1127984074
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11264,6 +11663,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1372720235}
   - component: {fileID: 1372720236}
+  - component: {fileID: 1372720237}
   m_Layer: 0
   m_Name: Anchor_Light__WarmSodium__04
   m_TagString: Untagged
@@ -11351,6 +11751,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1372720237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1372720234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &1410154645
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11427,6 +11856,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1431215563}
   - component: {fileID: 1431215564}
+  - component: {fileID: 1431215565}
   m_Layer: 0
   m_Name: Anchor_Light__WarmSodium__19
   m_TagString: Untagged
@@ -11514,6 +11944,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1431215565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431215562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &1434200937
 GameObject:
   m_ObjectHideFlags: 0
@@ -11524,6 +11983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1434200938}
   - component: {fileID: 1434200939}
+  - component: {fileID: 1434200940}
   m_Layer: 0
   m_Name: Anchor_Light__RedEmergency__12
   m_TagString: Untagged
@@ -11611,6 +12071,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1434200940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434200937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &1442753364
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11881,6 +12370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1472425780}
   - component: {fileID: 1472425781}
+  - component: {fileID: 1472425782}
   m_Layer: 0
   m_Name: Anchor_Light__ColdMoon__05
   m_TagString: Untagged
@@ -11968,6 +12458,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1472425782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1472425779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &1476749915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12561,6 +13080,7 @@ GameObject:
   - component: {fileID: 1547542674}
   - component: {fileID: 1547542676}
   - component: {fileID: 1547542675}
+  - component: {fileID: 1547542677}
   m_Layer: 0
   m_Name: Anchor_Light__FlickerLamp__08
   m_TagString: Untagged
@@ -12664,6 +13184,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1547542677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547542673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &1552572815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13126,6 +13675,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7990070876630970027, guid: e1a2fb5ee22f650479d684ff70608f57, type: 3}
   m_PrefabInstance: {fileID: 1635245549}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &1684866486 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 7513924491033804353, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+  m_PrefabInstance: {fileID: 1058165472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1687057873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13268,6 +13822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1724605012}
   - component: {fileID: 1724605013}
+  - component: {fileID: 1724605014}
   m_Layer: 0
   m_Name: Anchor_Light__ColdMoon__06
   m_TagString: Untagged
@@ -13355,6 +13910,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1724605014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724605011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &1765825698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13751,6 +14335,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7004123408886535669, guid: cd1541f2a4964d14b96ddcb4250b4c4a, type: 3}
   m_PrefabInstance: {fileID: 1849064652}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1857742266
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4011990843487703419, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_Name
+      value: Collectible
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.40288
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494005575282090838, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 08fe43fd6441b9c4896615edc77f24d6, type: 3}
 --- !u!1001 &1866858021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13959,6 +14612,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1884520296}
   - component: {fileID: 1884520297}
+  - component: {fileID: 1884520298}
   m_Layer: 0
   m_Name: Anchor_Light__WarmSodium__09
   m_TagString: Untagged
@@ -14046,6 +14700,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1884520298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884520295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &1886913478
 GameObject:
   m_ObjectHideFlags: 0
@@ -14056,6 +14739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1886913479}
   - component: {fileID: 1886913480}
+  - component: {fileID: 1886913481}
   m_Layer: 0
   m_Name: Anchor_Light__WarmSodium__22
   m_TagString: Untagged
@@ -14143,6 +14827,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1886913481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886913478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &1915449265
 GameObject:
   m_ObjectHideFlags: 0
@@ -14154,6 +14867,7 @@ GameObject:
   - component: {fileID: 1915449266}
   - component: {fileID: 1915449268}
   - component: {fileID: 1915449267}
+  - component: {fileID: 1915449269}
   m_Layer: 0
   m_Name: Anchor_Light__FlickerLamp__18
   m_TagString: Untagged
@@ -14257,6 +14971,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1915449269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915449265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &1920245991
 GameObject:
   m_ObjectHideFlags: 0
@@ -14793,6 +15536,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7990070876630970027, guid: e1a2fb5ee22f650479d684ff70608f57, type: 3}
   m_PrefabInstance: {fileID: 1990186259}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1996264168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5833111746099161669, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+  m_PrefabInstance: {fileID: 1058165472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2029926427
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14935,6 +15683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2040782025}
   - component: {fileID: 2040782026}
+  - component: {fileID: 2040782027}
   m_Layer: 0
   m_Name: Anchor_Light__GreenCRT__02
   m_TagString: Untagged
@@ -15022,6 +15771,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &2040782027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040782024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &2067869414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15220,6 +15998,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6313923986159222651, guid: 231984dd6528e504da64e675aeca0fc0, type: 3}
   m_PrefabInstance: {fileID: 2096359244}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2119746342 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9144535717789815634, guid: f2b1b0e1d599b29459093c2354198a28, type: 3}
+  m_PrefabInstance: {fileID: 1058165472}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2135601210
 GameObject:
   m_ObjectHideFlags: 0
@@ -15230,6 +16013,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2135601211}
   - component: {fileID: 2135601212}
+  - component: {fileID: 2135601213}
   m_Layer: 0
   m_Name: Anchor_Light__RedEmergency__01
   m_TagString: Untagged
@@ -15317,6 +16101,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &2135601213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135601210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1 &2135892999
 GameObject:
   m_ObjectHideFlags: 0
@@ -15327,6 +16140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2135893000}
   - component: {fileID: 2135893001}
+  - component: {fileID: 2135893002}
   m_Layer: 0
   m_Name: Anchor_Light__RedEmergency__21
   m_TagString: Untagged
@@ -15414,6 +16228,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &2135893002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135892999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &2141526387
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15489,3 +16332,4 @@ SceneRoots:
   - {fileID: 57071911}
   - {fileID: 467509264}
   - {fileID: 791250247}
+  - {fileID: 1857742266}

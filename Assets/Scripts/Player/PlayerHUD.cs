@@ -1,3 +1,4 @@
+using LethalFactory.Collectibles;
 using UnityEngine;
 
 namespace LethalFactory.Player
@@ -36,6 +37,7 @@ namespace LethalFactory.Player
             _character.Damaged += OnDamaged;
             _character.Died += OnDied;
             if (_tools != null) _tools.Feedback += ShowMessage;
+            Collectible.AnyCollected += OnCollected;
         }
 
         private void OnDisable()
@@ -43,6 +45,7 @@ namespace LethalFactory.Player
             _character.Damaged -= OnDamaged;
             _character.Died -= OnDied;
             if (_tools != null) _tools.Feedback -= ShowMessage;
+            Collectible.AnyCollected -= OnCollected;
         }
 
         private void OnDestroy()
@@ -51,6 +54,8 @@ namespace LethalFactory.Player
         }
 
         private void OnDamaged(int amount) => ShowMessage($"Recibiste {amount} de daño");
+
+        private void OnCollected(Collectible item) => ShowMessage($"Recogiste {item.DisplayName}");
 
         private void OnDied() => ShowMessage("MORISTE", float.PositiveInfinity);
 

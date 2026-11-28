@@ -60,6 +60,24 @@ namespace LethalFactory.Player
                 _cameraDefaultLocalPos = cameraPivot.localPosition;
             }
 
+            // Si no se asignó la linterna en el Inspector, busca la luz "SuitFlashlight" en los hijos.
+            if (suitFlashlight == null)
+            {
+                foreach (Light childLight in GetComponentsInChildren<Light>(true))
+                {
+                    if (childLight.name == "SuitFlashlight")
+                    {
+                        suitFlashlight = childLight;
+                        break;
+                    }
+                }
+            }
+
+            if (suitFlashlight == null)
+            {
+                Debug.LogWarning("[FirstPersonExplorer] No se encontró la linterna (SuitFlashlight).", this);
+            }
+
             if (characterAnimator == null)
             {
                 characterAnimator = GetComponentInChildren<Animator>();

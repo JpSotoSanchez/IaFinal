@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1068056517990016647
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5634289105339641246}
+  m_Layer: 0
+  m_Name: Aim Pivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5634289105339641246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068056517990016647}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.000000053385087, y: -0.7071067, z: -0.7071068, w: 0.000000053385076}
+  m_LocalPosition: {x: -0, y: -0.397, z: 1.495}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6399253331380459717}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5293533831280765191
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,6 +45,7 @@ GameObject:
   - component: {fileID: 2333836726638560037}
   - component: {fileID: 4193534839570000904}
   - component: {fileID: 6535530642282883686}
+  - component: {fileID: 2322893789408028083}
   m_Layer: 0
   m_Name: Player_Hazmat
   m_TagString: Player
@@ -78,12 +110,12 @@ MonoBehaviour:
   walkSpeed: 3.6
   runSpeed: 6.5
   gravity: -18
-  cameraPivot: {fileID: 0}
+  cameraPivot: {fileID: 5833111746099161669}
   mouseSensitivity: 0.14
   maxPitchAngle: 84
-  characterAnimator: {fileID: 0}
-  headMeshRenderer: {fileID: 0}
-  suitFlashlight: {fileID: 0}
+  characterAnimator: {fileID: 4976291486132824969}
+  headMeshRenderer: {fileID: 7513924491033804353}
+  suitFlashlight: {fileID: 1020122342775729817}
   enableHeadBob: 1
   walkBobAmplitude: 0.025
   runBobAmplitude: 0.048
@@ -117,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7adc5593733637040954f8464e1ba8a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LethalFactory.Player.PlayerTools
-  aimOrigin: {fileID: 0}
+  aimOrigin: {fileID: 5634289105339641246}
   hitMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -149,6 +181,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   unlockCursorOnDeath: 1
+--- !u!114 &2322893789408028083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293533831280765191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2ed56f6414bca7469b4ab00dca42a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LethalFactory.Player.PlayerHUD
+  showControls: 1
+  messageDuration: 2.5
 --- !u!1 &5642967526051589864
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,11 +586,29 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 37187a89e901e5549b3d0018256969ac, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5524636998470799069, guid: 7ab3995f5df99c5499d4bc2205a9c2fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5634289105339641246}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ab3995f5df99c5499d4bc2205a9c2fb, type: 3}
 --- !u!4 &1436501398564024819 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7ab3995f5df99c5499d4bc2205a9c2fb, type: 3}
+  m_PrefabInstance: {fileID: 1469795345188771352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4976291486132824969 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 7ab3995f5df99c5499d4bc2205a9c2fb, type: 3}
+  m_PrefabInstance: {fileID: 1469795345188771352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6399253331380459717 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5524636998470799069, guid: 7ab3995f5df99c5499d4bc2205a9c2fb, type: 3}
+  m_PrefabInstance: {fileID: 1469795345188771352}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &7513924491033804353 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8945012628872407129, guid: 7ab3995f5df99c5499d4bc2205a9c2fb, type: 3}
   m_PrefabInstance: {fileID: 1469795345188771352}
   m_PrefabAsset: {fileID: 0}
