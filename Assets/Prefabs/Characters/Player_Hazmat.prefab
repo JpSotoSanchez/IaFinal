@@ -10,7 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1268920754691918076}
   - component: {fileID: 8449835184725565290}
-  - component: {fileID: 2675913230884320023}
+  - component: {fileID: 982087501030411485}
+  - component: {fileID: 2333836726638560037}
+  - component: {fileID: 4193534839570000904}
+  - component: {fileID: 6535530642282883686}
   m_Layer: 0
   m_Name: Player_Hazmat
   m_TagString: Player
@@ -60,7 +63,7 @@ CharacterController:
   m_SkinWidth: 0.04
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.89, z: 0}
---- !u!114 &2675913230884320023
+--- !u!114 &982087501030411485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,15 +78,77 @@ MonoBehaviour:
   walkSpeed: 3.6
   runSpeed: 6.5
   gravity: -18
-  cameraPivot: {fileID: 5833111746099161669}
+  cameraPivot: {fileID: 0}
   mouseSensitivity: 0.14
   maxPitchAngle: 84
-  characterAnimator: {fileID: 4976291486132824969}
-  headMeshRenderer: {fileID: 7513924491033804353}
-  suitFlashlight: {fileID: 1020122342775729817}
+  characterAnimator: {fileID: 0}
+  headMeshRenderer: {fileID: 0}
+  suitFlashlight: {fileID: 0}
   enableHeadBob: 1
   walkBobAmplitude: 0.025
   runBobAmplitude: 0.048
+--- !u!114 &2333836726638560037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293533831280765191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37dbc9c557a7d8048b9e61ac063d7513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LethalFactory.Player.PlayerNoise
+  walkNoiseRadius: 5
+  runNoiseRadius: 15
+  walkStepInterval: 0.5
+  runStepInterval: 0.35
+  movingThreshold: 0.2
+  runSpeedThreshold: 5
+--- !u!114 &4193534839570000904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293533831280765191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7adc5593733637040954f8464e1ba8a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LethalFactory.Player.PlayerTools
+  aimOrigin: {fileID: 0}
+  hitMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  shovelDamage: 1
+  shovelRange: 2.5
+  shovelCooldown: 0.6
+  stunRange: 12
+  stunDuration: 4
+  stunCooldown: 3
+  dropNoiseRadius: 20
+  dropCooldown: 1
+--- !u!114 &6535530642282883686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293533831280765191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d041ab4aaf1d66242994404ad8cdc1a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LethalFactory.Player.PlayerCharacter
+  eyes: {fileID: 0}
+  maxHealth: 100
+  movingThreshold: 0.2
+  lookAroundThreshold: 2
+  lineOfSightMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  unlockCursorOnDeath: 1
 --- !u!1 &5642967526051589864
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,6 +329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1069274700495094747}
   - component: {fileID: 1020122342775729817}
+  - component: {fileID: 2739633306421473822}
   m_Layer: 0
   m_Name: SuitFlashlight
   m_TagString: Untagged
@@ -351,6 +417,35 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &2739633306421473822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7549315359868192897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
 --- !u!1001 &1469795345188771352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -451,15 +546,5 @@ PrefabInstance:
 --- !u!4 &1436501398564024819 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7ab3995f5df99c5499d4bc2205a9c2fb, type: 3}
-  m_PrefabInstance: {fileID: 1469795345188771352}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &4976291486132824969 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 7ab3995f5df99c5499d4bc2205a9c2fb, type: 3}
-  m_PrefabInstance: {fileID: 1469795345188771352}
-  m_PrefabAsset: {fileID: 0}
---- !u!137 &7513924491033804353 stripped
-SkinnedMeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8945012628872407129, guid: 7ab3995f5df99c5499d4bc2205a9c2fb, type: 3}
   m_PrefabInstance: {fileID: 1469795345188771352}
   m_PrefabAsset: {fileID: 0}
